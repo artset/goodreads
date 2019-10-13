@@ -1,0 +1,148 @@
+.header {
+    position: fixed;
+    width: 100%;
+    display:flex;
+    padding: 10px 30px 10px 30px;
+    align-items: center;   
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgb(196, 183, 159);
+}
+
+.header img {
+    width: 30px;
+}
+
+.search {
+    background: #EBEBEB;
+    border-radius: 10px;
+    align-items: center;
+    width: 30%;
+    display:flex;
+    height: 40px;
+    margin: 10px 10px 10px 40px;
+}
+
+.search img {
+    margin-left:5px;
+    width: 30px;
+}
+
+.search input[type=text] {
+    padding-left: 8px;
+    font-size: 11px;
+    background:transparent;
+    border: none;
+    width: 170px;
+  }
+
+ul.header__nav {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 10px;
+    flex-wrap: nowrap;
+}
+
+ul.header__nav--first{
+    padding: 0px 12px 0px 0px;
+    border-right: 1px solid #C4C4C4;
+}
+
+li.header__link {
+    display: inline;
+}
+
+li.header__link a{
+    padding: 32px 15px 32px 15px;
+}
+
+li.header__link a:hover{
+    background: #EBEBEB;
+    color: #444444;
+}
+
+li.header__link--profile img{
+    border-radius: 100%;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.header__nav-wrapper {
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.content {
+    width: 900px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sidebar {
+    background: #FFFFFF;
+    width: 250px;
+    padding: 20px;
+    margin: 120px 0px 20px 0px;
+    border: 1px solid rgb(230, 221, 204);
+    position: fixed;
+}
+
+.newsfeed {
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+.post {
+    background: #FFFFFF;
+    width: 600px;
+    padding: 20px;
+    margin: 20px 0px 0px 30px;
+    border: 1px solid rgb(230, 221, 204);
+}
+
+.current-book {
+    max-height: 140px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.current-book img {
+    height: 120px;
+}
+
+.current-book__info {
+    margin-left: 30px;
+
+}
+
+.current-book__more {
+    margin-left: 30px;
+    height: 100%;
+    border-left: 1px solid #C4C4C4;
+    padding: 20px 0px 20px 20px;
+}
+
+.current-book__more a{
+    display: block;
+}
+
+.post__title {
+    display: flex;
+}
+
+.post__content {
+    padding: 10px;
+}
+
+.post__content img {
+    height: 120px;
+    float: left;
+    margin-right: 10px;
+}

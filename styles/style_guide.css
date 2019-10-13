@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&display=swap');
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    background: #F4EDE1;
+}
+
+
+a {
+    color: #6D4700;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+a:hover {
+    color: #69BA90;
+    text-decoration: none;
+}
+
+.title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.4rem;
+}
+
+h1 {
+    font-size: 2.4rem; 
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h5 {
+    font-size: 1rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.content {
+    font-size: .8rem;
+}
+
+.user-profile img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -4px;
+}
