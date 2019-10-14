@@ -4,7 +4,25 @@
 body {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1rem;
-    background: #F4EDE1;
+    background: #fcefda;
+}
+
+::selection {
+    background: #6D4700;
+    color: #fff; }
+  
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px; 
+}
+  
+::-webkit-scrollbar-track-piece {
+    background-color:rgb(252, 239, 218);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #F6BD60;
+    border-radius: 7px; 
 }
 
 
