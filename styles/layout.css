@@ -201,13 +201,17 @@ li.header__link--profile img{
     margin-left: 10px;
 }
 
-.header__community {
+#header__link__community:hover .header__community {
+    opacity: 1;
+}
+#header__link__community .header__community {
+    border-top: 2px solid #C4C4C4;
     position:fixed;
     width:140px;
     background: #fff;
     margin-left: 70px;
-    margin-top: 55px;
-    padding: 10px;
+    margin-top: 30px;
+    padding: 0px;
     opacity: 0;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -215,8 +219,8 @@ li.header__link--profile img{
     -o-transition: .5s;
     transition: .5s;
 }
-
-.header__community a {
+#header__link__community .header__community a {
     display:block;
-    padding: 5px;
+    padding:10px;
+    margin: 0px;
 }
