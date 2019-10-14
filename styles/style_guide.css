@@ -46,6 +46,10 @@ a:hover {
     font-size: 2.4rem;
 }
 
+.title a {
+    color: #000000;
+}
+
 h1 {
     font-size: 2.4rem; 
     font-family: 'Libre Baskerville', serif;
