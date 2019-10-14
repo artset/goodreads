@@ -1,22 +1,28 @@
-$( "#sidebar__link__personal" ).click(function() {
+$("#sidebar__link--newsfeed").addClass("active");
+$( "#sidebar__link--personal" ).click(function() {
   $(".feed__discover").css("display", "none");
   $(".feed__personal").css("display", "block");
   $(".feed__newsfeed").css("display", "none");
-  // $("#sidebar__link__personal").css("border-right", "3px solid #F6BD60");
+  $("#sidebar__link--personal").addClass("active");
+  $("#sidebar__link--discover").removeClass("active");
+  $("#sidebar__link--newsfeed").removeClass("active");
 });
 
-$( "#sidebar__link__discover" ).click(function() {
+$( "#sidebar__link--discover" ).click(function() {
   $(".feed__discover").css("display", "block");
   $(".feed__personal").css("display", "none");
   $(".feed__newsfeed").css("display", "none");
-  // $("#sidebar__link__discover").css("border-right", "3px solid #F6BD60");
+  $("#sidebar__link--personal").removeClass("active");
+  $("#sidebar__link--discover").addClass("active");
+  $("#sidebar__link--newsfeed").removeClass("active");
 });
 
-$( "#sidebar__link__newsfeed" ).click(function() {
+$( "#sidebar__link--newsfeed" ).click(function() {
   $(".feed__discover").css("display", "none");
   $(".feed__personal").css("display", "none");
   $(".feed__newsfeed").css("display", "block");
-  // $("#sidebar__link__newsfeed").css("border-right", "3px solid #F6BD60");
-
+  $("#sidebar__link--personal").removeClass("active");
+  $("#sidebar__link--discover").removeClass("active");
+  $("#sidebar__link--newsfeed").addClass("active");
 });
 

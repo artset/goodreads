@@ -85,11 +85,9 @@ li.header__link--profile img{
 }
 
 .sidebar {
-    /* background: #FFFFFF; */
     width: 180px;
     padding: 0px 20px 20px 20px;
     margin: 120px 0px 20px 0px;
-    /* border: 1px solid rgb(230, 221, 204); */
     position: fixed;
 }
 
@@ -102,10 +100,31 @@ li.header__link--profile img{
 
 .sidebar__link a {
     display:block;
-    border-right: 2px solid #F6BD60;
+    -moz-box-shadow: inset 100px 0px 0px 0px #F6BD60;
+    -webkit-box-shadow: inset 100px 0px 0px 0px #F6BD60;
+    box-shadow: inset 2px 0px 0px 0.01px #F6BD60;
     background: #ffffff;
     padding: 5px 15px 5px 5px;
     margin-bottom: 10px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.sidebar__link a:hover {
+    -moz-box-shadow:  inset 160px 0px 0px 0.01px #F6BD60;
+    -webkit-box-shadow:  inset 160px 0px 0px 0.01px #F6BD60;
+    box-shadow: inset 160px 0px 0px 0.01px #F6BD60;
+    color: #ffffff;
+}
+
+.sidebar__link > .active {
+    -moz-box-shadow:  inset 160px 0px 0px 0.01px #F6BD60;
+    -webkit-box-shadow:  inset 160px 0px 0px 0.01px #F6BD60;
+    box-shadow: inset 160px 0px 0px 0.01px #F6BD60;
+    color: #ffffff;
 }
 
 .feed {
@@ -201,10 +220,11 @@ li.header__link--profile img{
     margin-left: 10px;
 }
 
-#header__link__community:hover .header__community {
+#header__link--community:hover .header__community {
     opacity: 1;
 }
-#header__link__community .header__community {
+
+#header__link--community .header__community {
     border-top: 2px solid #C4C4C4;
     position:fixed;
     width:140px;
@@ -219,8 +239,35 @@ li.header__link--profile img{
     -o-transition: .5s;
     transition: .5s;
 }
-#header__link__community .header__community a {
+#header__link--community .header__community a {
+    display:block;
+    font-size: .8rem;
+    padding:10px;
+    margin: 0px;
+}
+
+.header__link--profile:hover .header__profile {
+    opacity: 1;
+}
+
+.header__link--profile .header__profile {
+    border-top: 2px solid #C4C4C4;
+    position:fixed;
+    width:140px;
+    background: #fff;
+    margin-left: 105px;
+    margin-top: 25px;
+    padding: 0px;
+    opacity: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.header__link--profile .header__profile a {
     display:block;
     padding:10px;
+    font-size: .8rem;
     margin: 0px;
 }
