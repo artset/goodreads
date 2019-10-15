@@ -8,6 +8,14 @@
     border: 1px solid rgb(230, 221, 204);
  }
 
+.post__book {
+     display: flex;
+     width: 100px;
+     position: relative;
+     float:left;
+     flex-direction: column;
+     margin-bottom: 10px;
+ }
 .header {
     position: fixed;
     width: 100%;
@@ -90,11 +98,17 @@
 
     .post__photos {
         display: flex;
+        width: 380px;
+        flex-wrap: wrap;
     }
 
-    .post__photos img {
-        width: 90px;
-        margin: 2px;
+    .pic {
+        width: 380px;
+        margin: 5px;
+    }
+
+    .pic img {
+        width: 320px;
     }
 
     .sidebar {
