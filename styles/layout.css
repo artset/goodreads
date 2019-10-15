@@ -21,6 +21,22 @@
     z-index: 1;
 }
 
+.header--mobile {
+    display: none;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgb(196, 183, 159);
+    z-index: 1;
+    align-items: center;   
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.header--mobile img{
+    width: 25px;
+}
 .header img {
     width: 25px;
 }
@@ -32,7 +48,120 @@
     font-size: .8rem;
 }
 
-@media only screen and (min-width: 470px) and (max-width:799px) {
+.current-book__more--mobile {
+    display:none;
+}
+
+/* Mobile support */
+@media (max-width: 470px) {
+    .header {
+        display: none;
+    }
+
+    .header--mobile {
+        display: flex;
+    }
+
+    .search {
+        width: 40px;
+    }
+
+    .content {
+        width: 450px;
+        padding-bottom: 40px;
+        margin-top: 100px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feed {
+        width: 400px;
+        margin-top: 0px;
+    }
+
+    .post {
+        width: 370px;
+    }
+
+    .post__footer {
+        width: 320px;
+    }
+
+    .post__photos {
+        display: flex;
+    }
+
+    .post__photos img {
+        width: 90px;
+        margin: 2px;
+    }
+
+    .sidebar {
+        text-align: center;
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+        margin: 120px 0px 0px 0px;
+        position: relative;
+    }
+
+    .sidebar__link {
+        text-align: center;
+    }
+    
+    .sidebar__link a {
+        display:inline-block;
+        width: 90px;
+        text-align: center;
+        -moz-box-shadow: inset 0px -2px 0px 0.01px #F6BD60;
+        -webkit-box-shadow: inset 0px -2px 0px 0.01px #F6BD60;
+        box-shadow: inset 0px -2px 0px 0.01px #F6BD60;
+        background: #ffffff;
+        padding: 5px 15px 5px 5px;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+    }
+
+    .sidebar__link a:hover {
+        -moz-box-shadow:  inset 0px -30px 0px 0.01px #F6BD60;
+        -webkit-box-shadow:  inset 0px -30px 0px 0.01px #F6BD60;
+        box-shadow: inset 0px -30px 0px 0.01px #F6BD60;
+        color: #ffffff;
+    }
+
+    .sidebar__link > .active {
+        -moz-box-shadow:  inset 0px -30px 0px 0.01px #F6BD60;
+        -webkit-box-shadow:  inset 0px -30px 0px 0.01px #F6BD60;
+        box-shadow: inset 0px -30px 0px 0.01px #F6BD60;
+        color: #ffffff;
+    }
+
+
+    .current-book-info {
+        width: 300px;
+    }
+
+    .current-book__more {
+        display: none;
+    }
+
+    .current-book__more--mobile {
+        width: 330px;
+        border-top: 1px solid #C4C4C4;
+    }
+
+    .current-book__more--mobile a{
+        display: inline-block;
+        padding: 5px;
+    }
+
+}
+
+/* Tablet support */
+@media (min-width: 470px) and (max-width:799px) {
     .content {
         width: 500px;
         padding-bottom: 40px;
@@ -41,7 +170,26 @@
         display: flex;
         flex-direction: column;
     }
+
+    .header {
+        display: none;
+    }
+
+    .header--mobile {
+        display: flex;
+    }
     
+    .search--mobile {
+        background: #ebebeb;
+        border-radius: 10px;
+        align-items: center;
+        width: 20%;
+        padding: 6px;
+        display:flex;
+        height: 40px;
+        margin: 10px 10px 10px 10px;
+    }
+
     .sidebar {
         text-align: center;
         width: 100%;
@@ -87,7 +235,7 @@
 
     .feed {
         width: 450px;
-        margin-top: -50px;
+        margin-top: -40px;
     }
 
     .post {
@@ -95,18 +243,29 @@
     }
 
     .post__footer {
-        width: 360px;
+        width: 385px;
     }
 
-    .post__photos img {
-        width: 90px;
-        margin: 2px;
+    .post__photos {
+        display: flex;
+        width: 400px;
+        flex-wrap: wrap;
     }
+
+    .pic {
+        height: 250px;
+        margin: 5px;
+    }
+
+    .pic img {
+        height: 250px;
+    }
+
 
  }
 
  /*  Desktop sizing */
-@media only screen and (min-width: 800px) {
+@media (min-width: 800px) {
     .content {
         width: 800px;
         padding-bottom: 40px;
@@ -182,6 +341,7 @@
     border-top:1px solid rgb(231, 231, 231);
 
 }
+
 .search {
     background: #EBEBEB;
     border-radius: 10px;
